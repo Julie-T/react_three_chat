@@ -49,6 +49,8 @@ MessageHistory.defaultProps = {
 }
 
 
-MessageHistory.propTypes = {}
+MessageHistory.propTypes = {
+    list: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.string, from: PropTypes.shape({ name: PropTypes.string}), type: PropTypes.string, time: PropTypes.string, text: PropTypes.string }))
+}
 
 export default MessageHistory
